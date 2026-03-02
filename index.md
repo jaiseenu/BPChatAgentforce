@@ -72,11 +72,13 @@
 
         // Initialize Embedded Messaging
        embeddedservice_bootstrap.init(
-          '00Dce000001LoFm', // Org ID
-          'Borrower_Portal', // Deployment name
-          'https://pflms--qa.sandbox.my.site.com/ESWBorrowerPortal1759909412660', // Site endpoint
-          { scrt2URL: 'https://pflms--qa.sandbox.my.salesforce-scrt.com' } // SCRT URL
-        );
+				'00Dce000001LoFm',
+				'Borrower_Portal_Agentforce',
+				'https://pflms--qa.sandbox.my.site.com/ESWBorrowerPortalAgentf1772453391770',
+				{
+					scrt2URL: 'https://pflms--qa.sandbox.my.salesforce-scrt.com'
+				}
+			);
 
       } catch (error) {
         console.error("Error initializing Embedded Messaging:", error);
@@ -85,6 +87,6 @@
   </script>
 
   <!-- Salesforce Embedded Messaging Bootstrap -->
-  <script type='text/javascript' src='https://pflms--qa.sandbox.my.site.com/ESWBorrowerPortal1759909412660/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+ <script type='text/javascript' src='https://pflms--qa.sandbox.my.site.com/ESWBorrowerPortalAgentf1772453391770/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
